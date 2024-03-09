@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>Lightgallery</name>
+  <creationDate>June 06, 2009</creationDate>
+  <author>Aneesh S</author>
+  <authorEmail>aneesh@aarthikaindia.com</authorEmail>
+  <authorUrl>http://www.aarthikaindia.com</authorUrl>
+  <copyright>(C) 2009 All rights reserved.</copyright>
+  <license>GNU/GPL</license>
+   <version>1.0 Beta</version>
+   <description>
+    <![CDATA[<p>lightgallery : Light box slide show image galley</p>]]>
+   </description>
+<!----> 
+
+  <install>
+    <sql folder="admin/sql">
+      <file driver="mysql" charset="utf8">install.lightgallery.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql  folder="admin/sql">
+      <file driver="mysql" charset="utf8">uninstall.lightgallery.sql</file>
+    </sql>
+  </uninstall>
+
+
+  <files folder="component">
+    <filename>index.html</filename>
+	<filename>controller.php</filename>
+	<filename>lightgallery.php</filename>
+   <filename>style.css</filename>
+   <filename>router.php</filename>
+   
+    <filename>images/index.html</filename>
+   
+   <filename>images/closelabel.gif</filename>
+   <filename>images/gallery.png</filename>
+   <filename>images/loading.gif</filename>
+   <filename>images/next.gif</filename>
+   <filename>images/nextlabel.gif</filename>
+   <filename>images/prev.gif</filename>
+   <filename>images/prevlabel.gif</filename>
+    
+	<filename>slideshow/index.html</filename>
+	
+ 	<filename>slideshow/lightbox.css</filename>
+	<filename>slideshow/lightbox.js</filename>
+	<filename>slideshow/prototype.js</filename>
+	<filename>slideshow/effects.js</filename>
+ 	<filename>slideshow/scriptaculous.js</filename>
+	
+	<filename>models/index.html</filename>
+	
+	<filename>models/category.php</filename>
+	<filename>models/list.php</filename>
+ 
+ 
+	<filename>views/index.html</filename>
+ 	
+	<filename>views/category/index.html</filename>
+	<filename>views/category/view.html.php</filename>
+		<filename>views/category/tmpl/index.html</filename>
+		<filename>views/category/tmpl/default.php</filename>
+   
+	<filename>views/list/index.html</filename>
+	<filename>views/list/view.html.php</filename>
+		<filename>views/list/tmpl/index.html</filename>
+		<filename>views/list/tmpl/default.php</filename>
+   		
+  </files>
+  <administration>
+  <menu>LightGallery</menu>
+	<files folder="admin">
+		<filename>index.html</filename>
+		<filename>admin.lightgallery.php</filename>
+		
+	   <filename>lightgallery/index.html</filename>
+	   <filename>lightgallery/no_photo_small.gif</filename>
+
+		<filename>controllers/index.html</filename>
+		<filename>controllers/category.php</filename>
+		<filename>controllers/images.php</filename>
+
+		<filename>tables/index.html</filename>
+		<filename>tables/category.php</filename>
+		<filename>tables/images.php</filename>
+ 		
+		<filename>views/index.html</filename>
+		<filename>views/category.php</filename>
+ 		<filename>views/images.php</filename>
+ 	</files>
+	
+	<files folder="admin/sql">
+    <!-- database script -->
+      <filename>install.lightgallery.sql</filename>
+      <filename>uninstall.lightgallery.sql</filename>
+    </files>
+
+   </administration>
+ </install>

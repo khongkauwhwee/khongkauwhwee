@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - SmoothGallery2 Plugin</name>
+	<author>Stacy Coil</author>
+	<creationDate>February 4th 2009</creationDate>
+	<copyright>Copyright 2009</copyright>
+	<license>GNU General Public</license>
+	<authorEmail>sdcoil@sambaworks.com</authorEmail>
+	<authorUrl>http://SambaWorks.com</authorUrl>
+	<version>1.5alpha</version>
+	<description>
+		SmoothGallery + Lightbox Plugin for Joomla 1.5.x allows you to display images with SmoothGallery in your content.
+	</description>
+	<files>
+		<filename plugin="smoothgallery">smoothgallery.php</filename>
+		<filename>smoothgallery.xml</filename>
+		<filename>/smoothgallery/index.html</filename>
+		<filename>/smoothgallery/scripts/jd.gallery.js</filename>
+		<filename>/smoothgallery/scripts/index.html</filename>
+		<filename>/smoothgallery/scripts/mootools.js</filename>
+		<filename>/smoothgallery/scripts/slightbox.js</filename>
+		<filename>/smoothgallery/css/index.html</filename>
+		<filename>/smoothgallery/css/img/index.html</filename>
+		<filename>/smoothgallery/css/jd.gallery.css</filename>
+		<filename>/smoothgallery/css/slightbox.css</filename>
+		<filename>/smoothgallery/css/img/carrow1.gif</filename>
+		<filename>/smoothgallery/css/img/carrow2.gif</filename>
+		<filename>/smoothgallery/css/img/fleche1.gif</filename>
+		<filename>/smoothgallery/css/img/fleche1.png</filename>
+		<filename>/smoothgallery/css/img/fleche2.gif</filename>
+		<filename>/smoothgallery/css/img/fleche2.png</filename>
+		<filename>/smoothgallery/css/img/loading-bar-black.gif</filename>
+		<filename>/smoothgallery/css/img/open.png</filename>
+		<filename>/smoothgallery/css/img/close9yj.gif</filename>
+		<filename>/smoothgallery/smoothgallery.class.php</filename>
+		<filename>/smoothgallery/content_smoothgallery.php</filename>
+		<filename>/smoothgallery/php/simplepie.inc</filename>
+		<filename>/smoothgallery/php/index.html</filename>
+		<filename>/smoothgallery/cache/index.html</filename>
+		<filename>/smoothgallery/docs/readme.txt</filename>
+		<filename>/smoothgallery/docs/index.html</filename>
+	</files>
+	<params>
+		<param name="lightbox" type="list" default="1" label="Use Lightbox" description="Do you want to use lightbox?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showCarousel" type="list" default="1" label="Show Carousel" description="Do you want to show the Carousel?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showInfopane" type="list" default="1" label="Show Infopane" description="Do you want to show the Infopane, includes caption?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="embedLinks" type="list" default="1" label="Embed Links" description="Do you want to embed Links?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showArrows" type="list" default="1" label="Show Arrows" description="Do you want to show Left and Right Arrows?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="Slideshow Options" description="" />
+		<param name="fadeDuration" type="text" default="500" label="Default Fade Duration" description="Default Fade Duration" />
+		<param name="timed" type="list" default="1" label="Timed - Meaning Slideshow" description="Use as automatic slideshow?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="delay" type="text" default="9000" label="Slideshow Delay" description="Default Delay in miliseconds" />
+		<param name="@spacer" type="spacer" default="" label="Image Resizing Options" description="" />
+		<param name="height" type="text" default="345" label="Default Height" description="Default Gallery Height" />
+		<param name="width" type="text" default="460" label="Default Width" description="Default Gallery Width" />
+		<param name="thumbHeight" type="text" default="75" label="Default Thumb Height" description="Default Thumb Height in Carousel" />
+		<param name="thumbWidth" type="text" default="100" label="Default Thumb Width" description="Default Thumb Width in Carousel" />
+		<param name="lightboxHeight" type="text" default="300" label="Default Lightbox Height" description="Default Height in Lightbox" />
+		<param name="lightboxWidth" type="text" default="500" label="Default Lightbox Width" description="Default Width in Lightbox" />
+		<param name="@spacer" type="spacer" default="" label="Image Options" description="" />
+		<param name="jpgquality" type="text" default="80" label="Default JPG Quality" description="Default JPG Image Quality" />
+		<param name="@spacer" type="spacer" default="" label="CSS and Style Options" description="" />
+		<param name="alignment" type="list" default="center" label="Gallery Alignment" description="How do you want it to align?">
+			<option value="center">Center</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="Picasa Web" description="Only set these fields if you're using smoothgallery with Picasa Web" />
+		<param name="username" type="text" default="" label="Username" description="" />
+		<param name="picasa_curl" type="list" default="0" label="Disable cURL" description="Only set this to Yes if smoothgallery can not download the gallery from Picasa Web">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="File Order" description="Only applies when you automatically generate list from folder" />
+		<param name="sort" type="list" default="center" label="Sort Order" description="How do you want it to align?">
+			<option value="random">Random</option>
+			<option value="asc">Ascending</option>
+			<option value="desc">Descending</option>
+		</param>
+		<param name="slideInfoZoneOpacity" type="text" default="0.7" label="Default slideInfoZone Opacity" description="Default slideInfoZone Opacity" />
+		<param name="carouselMinimizedOpacity" type="text" default="0.4" label="Default Carousel Minimized Opacity" description="Default Carousel Minimized Opacity" />
+		<param name="carouselMinimizedHeight" type="text" default="20" label="Default Carousel Minimized Height" description="Default Carousel Minimized Height" />
+		<param name="carouselMaximizedOpacity" type="text" default="0.7" label="Default Corousel Maximized Opacity" description="Default Corousel Maximized Opacity" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="addCustomCSS" type="list" default="0" label="Use Custom CSS File" description="Use this option if you want to use a custom CSS file from your template/yourtemplate/css/smoothgallery.css">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="addCSS" type="list" default="1" label="Add SmoothGallery CSS" description="The only reason why you would disable this option is if you put the code in manually for all content items">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="addJS" type="list" default="1" label="Add SmoothGallery JS" description="You need this for SmoothGallery to work correctly, only turn off you know what you are doing">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

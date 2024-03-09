@@ -1,0 +1,1 @@
+[21-Mar-2011 05:10:10] PHP Warning:  file_get_contents(http://) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: operation failed in /home/khongka1/public_html/plugins/content/plugin_googlemap2_proxy.php on line 21

@@ -1,0 +1,55 @@
+/* CSS Document */
+.clsFloatLeft{
+	float:left;
+}
+.clsFloatRight{
+	float:right;
+}
+.clsClearBoth{
+	clear:both;
+}
+.clsImgPad{
+	padding:2px;
+}
+.clsCatTtile{
+	font-size:12px;
+}
+.clsTopMenuBg a:link, .clsTopMenuBg a:hover, .clsTopMenuBg a:visited, .clsTopMenuBg a:active {
+	font-size:11px;
+	font-weight:bold;
+	color:#333333;
+}
+.clsLightGallery{
+	height:48px;
+  	background-image:url(images/gallery.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	padding-left:50px;
+	border:1px dashed #CCCCCC;
+	background-color:#FCFCFC;
+}
+.clsLightGallery_title{
+  	text-align:left;
+	padding-top:15px;
+	padding-left:2px;
+	color:#4A4A4A;
+	font-size:25px;
+	font-weight:bold;
+}
+#clsWebpageBlueBorder{
+	border:1px solid #CCCCCC;
+	padding:8px;
+}
+.clsMouseOver{
+	background-color:#E8E8E8;
+	padding:5px;
+ }
+.clsMouseOut{
+	background-color:#FFFFFF;
+	padding:5px;
+ }
+.developedby{
+	font-size:10px;
+	color:#003366;
+	text-align:center;
+}

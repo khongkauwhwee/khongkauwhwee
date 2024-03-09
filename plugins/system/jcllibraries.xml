@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+  <name>JCal pro - Common libraries</name>
+  <author>Anything Digital</author>
+  <creationDate>2010-03-30</creationDate>
+  <copyright>2009 Anything Digital</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>admin@anything-digital.com</authorEmail>
+  <authorUrl>dev.anything-digital.com</authorUrl>
+  <version>2.2.10.545</version>
+  <description>Set of common libraries for JCal Pro</description>
+  
+  <files>
+    <filename plugin="jcl.libraries">jcllibraries.php</filename>
+    <folder>jcl.shhttpcomm</folder>
+  </files>
+  <params/>
+</install>

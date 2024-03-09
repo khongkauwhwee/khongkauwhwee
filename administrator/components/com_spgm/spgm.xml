@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>SPGM</name>
+	<creationDate>20/03/2010</creationDate>
+	<author>Chris Gaebler</author>
+	<copyright>Chris Gaebler 2009-2010</copyright>
+	<authorUrl>www.lesarbresdesign.info</authorUrl>
+	<version>2.07</version>
+	<description>Integrates SPGM into Joomla with a full admin interface</description>
+	
+  	<installfile>install.spgm.php</installfile>
+	
+ <params>
+ 	<param name="page_hdr" type="text" size="40" default="" label="Page title" description="The page title" />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+ 	<param name="top_text" type="textarea" rows="10" cols="60" default="" label="Text Above" description="Text to appear at the top of the page" />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+ 	<param name="bottom_text" type="textarea" rows="10" cols="60" default="" label="Text Below" description="Text to appear below the gallery" />
+</params>
+
+<files folder="site">
+	<filename>spgm.php</filename>
+	<filename>spgm/index.html</filename>
+	<filename>spgm/spgm.js</filename>
+	<filename>spgm/spgm.php</filename>
+	<folder>spgm/contrib/</folder>
+	<folder>spgm/gal/</folder>
+	<folder>spgm/flavors/</folder>
+	<folder>spgm/lang/</folder>
+</files>
+
+<install>
+ </install>
+
+ <uninstall>
+ </uninstall> 
+
+<administration>
+	<menu>SPGM Gallery</menu>
+
+	<languages folder="admin/language">
+		<language tag="en-GB">en-GB.com_spgm.ini</language>
+		<language tag="fr-FR">fr-FR.com_spgm.ini</language>
+		<language tag="nl-NL">nl-NL.com_spgm.ini</language>
+	</languages>
+
+	<files folder="admin">
+		<filename>admin.spgm.php</filename>
+		<filename>admin.spgm.html.php</filename>
+		<filename>toolbar.spgm.php</filename> 
+		<filename>toolbar.spgm.html.php</filename> 
+   		<folder>images/</folder>
+	</files>
+	
+</administration>
+</install>

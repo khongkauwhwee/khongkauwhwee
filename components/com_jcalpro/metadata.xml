@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<name>JCalPro</name>
+	<author>Anything Digital</author>
+	<copyright>2010 Anything Digital</copyright>
+	<authorEmail>admin@anything-digital.com</authorEmail>
+	<authorUrl>dev.anything-digital.com</authorUrl>
+	<menu>
+		<options var="extmode">
+			<option value="cal" name="Month view"	msg="Display your calendar using the month view." />
+			<option value="flat" name="Flat view" msg="A link to the flat view of events." />
+			<option value="week" name="Week view" msg="A link to the week view of events." />
+			<option value="day" name="Day view" msg="A link to the day view of events." />
+			<option value="cats" name="Categories view"	msg="A link to the events categories view." />
+			<option value="extcal_search" name="Search events page"	msg="A link to the events search page." />
+			<option value="event" name="Add new event" msg="A link to the Add new event page." />
+		</options>
+	</menu>
+	<state switch="extmode" default="cal">
+		<cal>
+			<name>JCal pro month view</name>
+			<description>Display your calendar using the month view.
+			</description>
+		</cal>
+		<flat>
+			<name>Flat view</name>
+			<description>A page to add a new event to the calendar</description>
+		</flat>
+		<week>
+			<name>Week view</name>
+			<description>A page displaying events within a week</description>
+		</week>
+		<day>
+			<name>Day view</name>
+			<description>A page displaying events within a day</description>
+			<url>
+				<param name="date" type="text" default="" label="Specific date"	description="A specific day to show, using the 2010-03-28 format" />
+			</url>
+		</day>
+		<cats>
+			<name>Categories view</name>
+			<description>A page displaying events categories</description>
+		</cats>
+		<event>
+			<name>Add new event</name>
+			<description>A page to add a new event to the calendar</description>
+			<url>
+				<param name="event_mode" type="hidden" default="add" />
+			</url>
+		</event>
+	</state>
+</metadata>

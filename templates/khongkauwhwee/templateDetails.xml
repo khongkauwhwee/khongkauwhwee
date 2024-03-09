@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>KhongKauwHwee</name>
+	<version>1.0.0</version>
+	<creationDate>2009-12-23</creationDate>
+	<author>Themza Team</author>
+	<authorEmail>erwinyuliarsa@yahoo.com</authorEmail>
+	<authorUrl>http://www.themza.com</authorUrl>
+	<copyright>ThemZa 2009</copyright>
+	<license>ThemZa TOS</license>
+	<description>KhongKauwHwee</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>functions.php</filename>
+
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/ieonly.css</filename>
+		<filename>css/blue.css</filename>
+		<filename>css/red.css</filename>
+		<filename>css/green.css</filename>
+
+		<filename>html/index.html</filename>
+		<filename>html/modules.php</filename>
+		<filename>html/pagination.php</filename>
+
+		<filename>js/index.html</filename>
+		<filename>js/moomenu.js</filename>
+		<filename>js/mootools.js</filename>
+
+		<filename>images/breadcrumbs_bg.png</filename>
+		<filename>images/contentheading_ico.png</filename>
+		<filename>images/contentheading_line.png</filename>
+		<filename>images/f_area_bg.png</filename>
+		<filename>images/index.html</filename>
+		<filename>images/logo1.gif</filename>
+		<filename>images/logo2.gif</filename>
+		<filename>images/logo3.gif</filename>
+		<filename>images/menu_col.gif</filename>
+		<filename>images/rub_bottom.png</filename>
+		<filename>images/rub_footer_bottom.png</filename>
+		<filename>images/search_bg.gif</filename>
+		
+		<filename>images/blue/banner.jpg</filename>
+		<filename>images/blue/bg_h3.png</filename>
+		<filename>images/blue/bg_page.png</filename>
+		<filename>images/blue/bg_read_more.png</filename>
+		<filename>images/blue/bottom.png</filename>
+		<filename>images/blue/f_area_h3.png</filename>
+		<filename>images/blue/menu_arrow.gif</filename>
+		<filename>images/blue/top_menu_bg.png</filename>
+		<filename>images/blue/top.png</filename>
+		
+		<filename>images/red/banner.jpg</filename>
+		<filename>images/red/bg_h3.png</filename>
+		<filename>images/red/bg_page.png</filename>
+		<filename>images/red/bg_read_more.png</filename>
+		<filename>images/red/bottom.png</filename>
+		<filename>images/red/f_area_h3.png</filename>
+		<filename>images/red/menu_arrow.gif</filename>
+		<filename>images/red/top_menu_bg.png</filename>
+		<filename>images/red/top.png</filename>
+		
+		<filename>images/green/banner.jpg</filename>
+		<filename>images/green/bg_h3.png</filename>
+		<filename>images/green/bg_page.png</filename>
+		<filename>images/green/bg_read_more.png</filename>
+		<filename>images/green/bottom.png</filename>
+		<filename>images/green/f_area_h3.png</filename>
+		<filename>images/green/menu_arrow.gif</filename>
+		<filename>images/green/top_menu_bg.png</filename>
+		<filename>images/green/top.png</filename>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user4</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+	<params>
+		<param name="colorVariation" type="list" default="red" label="Color Variation" description="Color variation to use">
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+		</param>
+		<param type="spacer" />
+		<param name="hideLogo" type="radio" default="0" label="Hide Logo" description="Hide the logo.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="spacer" />
+		<param name="logoVariation" type="list" default="1" label="Logo Variation" description="Logo variation to use">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</param>
+		<param type="spacer" />
+		<param name="hideBannerArea" type="radio" default="0" label="Hide Banner" description="This hides the banner section under the menu.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="hideBannerAreaInternal" type="radio" default="0" label="Hide Banner from the internal pages" description="This hides the banner section from the internal pages only">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>
